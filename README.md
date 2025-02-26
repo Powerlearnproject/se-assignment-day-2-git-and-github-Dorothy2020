@@ -105,14 +105,21 @@ git push -u origin main
 Branching in Git allows developers to create separate workspaces within a repository to work on new features, fix bugs, or experiment without modifying the main codebase. Each branch acts as an independent line of development that can be merged back when ready.
 
 Why Is Branching Important for Collaborative Development?
+
 ✅ Parallel Development: Teams can work on multiple features or fixes simultaneously without interfering with each other.
+
 ✅ Code Isolation: Changes remain separate from the main branch until they are tested and reviewed.
+
 ✅ Safe Experimentation: Developers can try out new ideas without breaking the stable version of the code.
+
 ✅ Better Collaboration: Multiple contributors can work on different aspects of a project without conflicts.
+
 ✅ Efficient Code Review: Branches allow for pull requests (PRs) where code can be reviewed and discussed before merging.
 
 Typical Git Branching Workflow: Creating, Using, and Merging Branches
+
 1️⃣ Check Existing Branches
+
 To see all branches in your repository:
 
 
@@ -120,10 +127,12 @@ git branch
 The active branch is marked with *, and main (or master) is usually the default.
 
 2️⃣ Create a New Branch
+
 To create a branch named feature-xyz:
 
 
 git branch feature-xyz
+
 3️⃣ Switch to the New Branch
 Move to the newly created branch:
 
@@ -133,22 +142,27 @@ Or combine creation and switching in one step:
 
 
 git checkout -b feature-xyz
+
 4️⃣ Make Changes and Commit
 Modify files, then add and commit them:
 
 
 git add .
 git commit -m "Added feature XYZ"
+
 5️⃣ Push the Branch to GitHub
 Upload the branch to GitHub:
 
 
 git push -u origin feature-xyz
+
 6️⃣ Open a Pull Request (PR) on GitHub
+
 Go to your GitHub repository.
 Click Compare & pull request next to your branch.
 Provide a description of the changes.
 Submit the PR for review.
+
 7️⃣ Merge the Branch into Main
 Once approved, merge the branch:
 
@@ -158,6 +172,7 @@ git merge feature-xyz
 Or merge it on GitHub through the Pull Request interface.
 
 8️⃣ Delete the Merged Branch
+
 After merging, remove the branch locally and remotely:
 
 
@@ -172,17 +187,23 @@ The Role of Pull Requests in GitHub Workflow
 A Pull Request (PR) is a GitHub feature that facilitates collaboration by enabling developers to propose changes, review code, and merge updates into the main project. It serves as a checkpoint where team members can discuss and refine the code before it is officially integrated.
 
 How Do Pull Requests Facilitate Code Review & Collaboration?
+
 ✅ Structured Collaboration: Developers can propose changes without modifying the main branch directly.
+
 ✅ Code Quality Assurance: Team members can review, suggest improvements, and discuss before merging.
+
 ✅ Prevention of Bugs: Catch errors early through peer reviews and automated testing before merging.
+
 ✅ Version Control: Maintains a clear history of changes, who made them, and why.
 
 Typical Steps in Creating & Merging a Pull Request
+
 1️⃣ Create a New Branch for Your Work
 Instead of working on the main branch, create a separate branch for the new feature or bug fix:
 
 
 git checkout -b feature-xyz
+
 2️⃣ Make and Commit Changes
 Modify the necessary files and commit them:
 
@@ -194,17 +215,22 @@ Send the branch to GitHub so that it can be reviewed:
 
 
 git push -u origin feature-xyz
+
 4️⃣ Open a Pull Request (PR) on GitHub
+
 Go to your GitHub repository.
 Click Compare & pull request next to your pushed branch.
 Write a clear title and description explaining the changes.
 Select reviewers (team members who should review the PR).
 Click Create pull request.
 5️⃣ Review & Discuss Changes
+
 Team members can review the code and leave comments.
 Suggestions for changes can be made, and the author can update the PR accordingly.
 Automated tests (if set up) will run to ensure nothing breaks.
+
 6️⃣ Merge the Pull Request
+
 Once the review is complete and all checks pass:
 
 Click Merge pull request on GitHub, or use:
@@ -218,12 +244,15 @@ git push origin --delete feature-xyz
 
 
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
+
 🔹 What is Forking?
+
 Forking a repository on GitHub creates a copy of someone else's repository under your own GitHub account. This allows you to freely experiment with changes without affecting the original project.
 
 🔹 How is Forking Different from Cloning?
+
 Feature	Forking	Cloning
-Creates a copy on GitHub	✅ Yes	❌ No (only local copy)
+Creates a copy on GitHub	 ✅ Yes	❌ No (only local copy)
 Affects the original repository	❌ No	❌ No
 Enables independent development	✅ Yes	❌ No
 Allows pull requests back to the original	✅ Yes	❌ No
