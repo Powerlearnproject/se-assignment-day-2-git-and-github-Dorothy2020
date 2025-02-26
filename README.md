@@ -14,7 +14,7 @@
 5. Pull Requests – A method for proposing and reviewing code changes before merging.
 6. Conflict Resolution – Handling conflicting changes when multiple developers modify the same part of a file.
 
-## GitHub is a cloud-based Git repository hosting service that allows developers to manage, share, and collaborate on code. It provides:
+- GitHub is a cloud-based Git repository hosting service that allows developers to manage, share, and collaborate on code. It provides:
 
 ✅ Remote Repositories – Code is stored securely online and accessible from anywhere.
 
